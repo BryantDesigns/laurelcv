@@ -28,8 +28,17 @@
             }
 
             .bg-yellow-500 {
-                background: #f59e0b;
-                /* Use Tailwind's yellow-500 color */
+                background-color: #f59e0b !important;
+                /* Ensure background color is applied */
+                -webkit-print-color-adjust: exact;
+                /* Ensure colors print accurately */
+                print-color-adjust: exact;
+                /* Ensure colors print accurately */
+            }
+
+            .text-white {
+                color: white !important;
+                /* Ensure text color is applied */
             }
 
             a {
@@ -71,7 +80,7 @@
             <!-- Professional Summary -->
             <section class="mb-10">
                 <h2 class="text-xl font-bold text-gray-800 border-b pb-2 mb-4">Professional Summary</h2>
-                <p class="leading-relaxed">
+                <p class="leading-relaxed text-sm">
                     Dedicated and compassionate Behavior Technician (BT) with over four years of experience in Applied Behavior Analysis
                     (ABA) therapy, credentialing, and data management. Adept at implementing evidence-based interventions to support
                     individuals with Autism Spectrum Disorder (ASD). Strong commitment to ethical practices and continuous professional
